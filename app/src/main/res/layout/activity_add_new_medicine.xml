@@ -1,0 +1,217 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/specialinput"
+        android:layout_alignEnd="@+id/specialinput"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Please enter medicine information:"
+            android:id="@+id/textView14"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Generic name:"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/genericnameinput"
+            android:layout_toEndOf="@+id/textView13"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/textView2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Trade name:"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tradenameinput"
+            android:layout_toEndOf="@+id/textView13"
+            android:layout_below="@+id/genericnameinput"
+            android:layout_alignStart="@+id/genericnameinput"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/textView4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Classification:"
+            android:id="@+id/textView4"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/classificationinput"
+            android:layout_toEndOf="@+id/textView13"
+            android:layout_below="@+id/tradenameinput"
+            android:layout_alignStart="@+id/tradenameinput"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/textView4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="High risk?:"
+            android:id="@+id/textView5"
+            android:layout_below="@+id/textView4"
+            android:layout_alignStart="@+id/textView7"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/highriskinput"
+            android:layout_toEndOf="@+id/textView13"
+            android:layout_below="@+id/textView4"
+            android:layout_alignStart="@+id/classificationinput"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/textView5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Authorized for community administration?:"
+            android:id="@+id/textView6"
+            android:layout_below="@+id/textView5"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/authforcommadmininput"
+            android:layout_toEndOf="@+id/textView13"
+            android:layout_alignBottom="@+id/textView8"
+            android:layout_alignStart="@+id/highriskinput"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/textView8" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Authorized for first dose?:"
+            android:id="@+id/textView9"
+            android:layout_centerVertical="true"
+            android:layout_alignEnd="@+id/textView4"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inputauthforfirstdose"
+            android:layout_toEndOf="@+id/textView13"
+            android:layout_above="@+id/textView11"
+            android:layout_alignStart="@+id/authforcommadmininput"
+            android:layout_alignEnd="@+id/authforcommadmininput"
+            android:layout_below="@+id/textView9"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="RPN Appropriate?:"
+            android:id="@+id/textView11"
+            android:layout_toEndOf="@+id/textView2"
+            android:layout_below="@+id/textView10"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rpnappropinput"
+            android:layout_toEndOf="@+id/textView13"
+            android:layout_alignTop="@+id/textView11"
+            android:layout_alignStart="@+id/inputauthforfirstdose"
+            android:layout_alignEnd="@+id/inputauthforfirstdose"
+            android:layout_alignBottom="@+id/textView11"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Approved Route?:"
+            android:id="@+id/textView12"
+            android:layout_toEndOf="@+id/textView2"
+            android:layout_below="@+id/textView11"
+            android:layout_alignStart="@+id/textView9"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/approverouteinput"
+            android:layout_toEndOf="@+id/textView13"
+            android:layout_above="@+id/textView13"
+            android:layout_alignStart="@+id/rpnappropinput"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/textView12"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Special Instructions?:"
+            android:id="@+id/textView13"
+            android:layout_toEndOf="@+id/textView2"
+            android:layout_below="@+id/textView12"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/specialinput"
+            android:layout_alignTop="@+id/textView13"
+            android:layout_toEndOf="@+id/textView13" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/submit"
+            android:layout_below="@+id/textView13"
+            android:layout_alignEnd="@+id/textView11"
+            android:layout_alignStart="@+id/textView12"
+            android:onClick="onClick"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</ScrollView>
